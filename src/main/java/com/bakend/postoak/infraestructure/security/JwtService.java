@@ -23,7 +23,7 @@ public class JwtService {
                 .setSubject(email)
                 .claim("nombre", nombre)
                 .setIssuedAt(new Date())
-                .setExpiration(new Date(System.currentTimeMillis() + 15 * 60 * 1000))
+                //.setExpiration(new Date(System.currentTimeMillis() + 15 * 60 * 1000))
                 .signWith(getKey(), SignatureAlgorithm.HS256)
                 .compact();
     }
