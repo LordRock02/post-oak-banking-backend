@@ -1,0 +1,10 @@
+package com.bakend.postoak.domain.dto;
+
+import java.util.UUID;
+
+public record UserResponseDTO(
+        UUID id,
+        String fullName,
+        String email,
+        String companyName
+) {}
